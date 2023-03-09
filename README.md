@@ -26,6 +26,8 @@ The intensity files must in a .csv file with marker names in the header and the 
 The marker file must in a .csv file. The header contains the markers to be norlized. The rest are the mutaully exclusive markers for the header marker. One can also normalize a sutset of markers.  
 The floor argument wil be different drastically depedent uponlatforms For cyclic immunofluorescence platforms, the orignal papers from Burlingame, EA (1) and Chang, YH (2) used 50 and 100. For Hyperion platform one can try 0.001. Users should test and find the optimal value for their own dataset  
 
+After normalization, a filter should be applied to set values below 1 as NA for each marker in each cell.
+
 REFERENCES:  
  
 1. Toward reproducible, scalable, and robust data analysis across multiplex tissue imaging platforms.  
