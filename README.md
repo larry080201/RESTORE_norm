@@ -1,6 +1,6 @@
 # RESTORE_norm
 Perform RESTORE normalization on multiplexed imaging data
-This project is for implementing the RESTORE normalization and background subtraction method proposed by Burlingame, EA (1) and Chang YH (2).  
+This project is for implementing the RESTORE normalization and background subtraction method proposed by Burlingame, EA (1) and Chang, YH (2).  
 
 Intended Usage on a HPC compute node:
 ```
@@ -24,7 +24,7 @@ and then
 ```
 The intensity files must in a .csv file with marker names in the header and the rest of signal intensities for each cell. It must have a column called 'scene', which contain the identifiers of each image/scene. It can be the same identifier if you gave only one scene in a file.  
 The marker file must in a .csv file. The header contains the markers to be norlized. The rest are the mutaully exclusive markers for the header marker. One can also normalize a sutset of markers.  
-The floor argument wil be different drastically depedent uponlatforms For cyclic immunofluorescence platforms, the orignal papers from Burlingame, EA (1) and Chang YH (2) used 50 and 100. For Hyperion platform one can try 0.001. Users should test and find the optimal value for their own dataset  
+The floor argument wil be different drastically depedent uponlatforms For cyclic immunofluorescence platforms, the orignal papers from Burlingame, EA (1) and Chang, YH (2) used 50 and 100. For Hyperion platform one can try 0.001. Users should test and find the optimal value for their own dataset  
 
 REFERENCES:  
  
