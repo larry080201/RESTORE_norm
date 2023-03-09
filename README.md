@@ -19,8 +19,7 @@ and then
 ~$ python normalize_v.py \
       --CSV <"the same intensity csv file as for calculate_threshold.py"> \
       --mfname <"the same mutually exclusive marker csv file as for calculate_threshold.py"> \
-      --save_dir <"the same results path as for calculate_threshold.py"> &
-   wait
+      --save_dir <"the same results path as for calculate_threshold.py">
 ```
 The intensity files must in a .csv file with marker names in the header and the rest of signal intensities for each cell. It must have a column called 'scene', which contain the identifiers of each image/scene. It can be the same identifier if you gave only one scene in a file.  
 The marker file must in a .csv file. The header contains the markers to be norlized. The rest are the mutaully exclusive markers for the header marker. One can also normalize a sutset of markers.  
