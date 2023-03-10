@@ -22,10 +22,10 @@ and then
       --save_dir <"the same results path as for calculate_threshold.py">
 ```
 The intensity files must in a .csv file with marker names in the header and the rest of signal intensities for each cell. It must have a column called 'scene', which contain the identifiers of each image/scene. It can be the same identifier if you gave only one scene in a file.  
-The marker file must in a .csv file. The header contains the markers to be norlized. The rest are the mutaully exclusive markers for the header marker. One can also normalize a sutset of markers.  
-The floor argument wil be different drastically depedent uponlatforms For cyclic immunofluorescence platforms, the orignal papers from Burlingame, EA (1) and Chang, YH (2) used 50 and 100. For Hyperion platform one can try 0.001. Users should test and find the optimal value for their own dataset  
+The marker file must in a .csv file. The header contains the markers to be normalized. They must match exactly with the markers in the data file header. The rest of the rows are the mutaully exclusive markers for the header marker. One can also normalize a sutset of markers.  
+The floor argument wil be different drastically depedent upon the platforms. For cyclic immunofluorescence platforms, the orignal papers from Burlingame, EA (1) and Chang, YH (2) used 50 and 100. For Hyperion platform one can try 0.001. Users should test and find the optimal value for their own dataset  
 
-After normalization, a filter should be applied to set values below 1 as NA for each marker in each cell.
+The normalized data are stored in csv files in the result folder. Marker plots are in the img folder. After normalization, a gate/filter should be applied to remove values below 1 for each marker in each cell.
 
 REFERENCES:  
  
