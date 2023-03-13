@@ -1,5 +1,5 @@
 # RESTORE_norm
-Perform RESTORE normalization on multiplexed imaging data.
+Perform RESTORE normalization on multiplexed imaging data such as cyclic immunofluorescence (CyCIF), CODEX, Hyperion and others.
 This project is for implementing the RESTORE normalization and background subtraction method proposed by Burlingame, EA (1) and Chang, YH (2).  
 
 Intended Usage on a HPC compute node:
