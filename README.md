@@ -1,6 +1,8 @@
 # RESTORE_norm
 Perform RESTORE normalization on multiplexed imaging data such as cyclic immunofluorescence (CyCIF), CODEX, Hyperion and others.  
+
 This project is for implementing the RESTORE normalization and background subtraction method proposed by Burlingame, EA (1) and Chang, YH (2).  
+
 If you have a relatively small dataset (e.g., less than 15 markers and less than 10,000 cells), you can try the GUI software for Windows, in the Release  
   
 Intended Usage on a HPC compute node:
