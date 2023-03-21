@@ -26,7 +26,7 @@ and then
 ```
 The intensity files must be in .csv format with marker names in the header and the rest of signal intensities for each cell. It must have a column called 'scene', which contains identifiers of each image/scene. It can be the same identifier if you have only one scene in a file.  
 The marker file must be a .csv file. The header contains the markers to be normalized. They must match exactly with the markers in the data file header. The rest of the rows are the mutaully exclusive markers for the header marker. One can also normalize a sutset of markers.  
-The floor argument wil be different depeding on platforms. For cyclic immunofluorescence platforms, the orignal papers from Burlingame, EA (1) and Chang, YH (2) used 50 and 100. For Hyperion platform one can try 0.001. Users should test and find the optimal value for their own dataset  
+The floor argument wil be different depeding on platforms. For cyclic immunofluorescence platforms, the orignal papers from Burlingame, EA (1) and Chang, YH (2) used 50 and 100. Users should test and find the optimal value for their own dataset  
 
 The normalized data are stored in csv files in the output folder. Marker plots are in the img folder. After normalization, a gate/filter should be applied to remove values below 1 for each marker in each cell.
 
