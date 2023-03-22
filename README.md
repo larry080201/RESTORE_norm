@@ -3,7 +3,7 @@ Perform RESTORE normalization on multiplexed imaging data such as cyclic immunof
 
 This project is for implementing the RESTORE normalization and background subtraction method proposed by Burlingame, EA (1) and Chang, YH (2).  
 
-If you have a relatively small dataset (e.g., less than 15 markers and less than 10,000 cells), you can try the GUI software for Windows, in the Release  
+If you have a relatively small dataset (e.g., less than 15 markers and less than 10,000 cells), you can try the GUI software for Windows, in the <a link="https://github.com/larry080201/RESTORE_norm/releases/tag/v1.0.1">Release</a>.  
   
 Intended Usage on a HPC compute node:
 ```
