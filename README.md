@@ -19,7 +19,7 @@ Intended Usage on a HPC compute node:
 ```
 and then
 ```
-~$ python normalize_v.py \
+~$ python normalize.py \
       --CSV <"the same intensity csv file as for calculate_threshold.py"> \
       --mfname <"the same mutually exclusive marker csv file as for calculate_threshold.py"> \
       --save_dir <"the same results path as for calculate_threshold.py">
